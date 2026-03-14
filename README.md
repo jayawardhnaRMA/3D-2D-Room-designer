@@ -74,5 +74,4 @@ Logo used across:
 
 ---
 
-## 📁 Project Structure
 
