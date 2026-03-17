@@ -1,0 +1,103 @@
+/* SECTION */
+
+.leadership-section{
+  background:#F6F6F8;
+  padding:80px 20px;
+}
+
+
+/* CONTAINER */
+
+.leadership-container{
+  max-width:1280px;
+  margin:0 auto;
+  text-align:center;
+}
+
+
+/* TITLE */
+
+.leadership-title{
+  font-family:Inter, sans-serif;
+  font-weight:700;
+  font-size:30px;
+  line-height:36px;
+  color:#0F172A;
+  margin-bottom:8px;
+}
+
+
+/* SUBTITLE */
+
+.leadership-subtitle{
+  font-family:Inter, sans-serif;
+  font-size:16px;
+  line-height:24px;
+  color:#64748B;
+  margin-bottom:48px;
+}
+
+
+/* GRID */
+
+.leaders-grid{
+  display:grid;
+  grid-template-columns:repeat(4, auto);
+  justify-content:center;
+  gap:90px;
+}
+
+/* MEMBER CARD */
+
+.leader-card{
+  width:160px;
+  text-align:center;
+  transition:transform 0.2s ease;
+}
+
+.leader-card:hover{
+  transform:translateY(-6px);
+}
+
+/* AVATAR */
+
+.avatar{
+  width:152px;
+  height:152px;
+  border-radius:9999px;
+  border:4px solid #F1F5F9;
+  overflow:hidden;
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
+
+
+/* NAME */
+
+.leader-card h4{
+  font-family:Inter, sans-serif;
+  font-weight:700;
+  font-size:18px;
+  line-height:28px;
+  color:#0F172A;
+  margin-bottom:2px;
+}
+
+
+/* ROLE */
+
+.leader-role{
+  font-family:Inter, sans-serif;
+  font-size:14px;
+  color:#2563EB;
+  margin:0;
+}

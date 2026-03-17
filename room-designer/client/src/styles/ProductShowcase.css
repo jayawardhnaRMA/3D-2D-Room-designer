@@ -1,0 +1,222 @@
+.product-showcase{
+  width:100%;
+  padding:32px 16px;
+  overflow-x:hidden;
+}
+
+@media (min-width: 640px) {
+  .product-showcase {
+    padding: 40px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-showcase {
+    padding: 48px 32px;
+  }
+}
+
+/* BLUE CARD */
+
+.showcase-container{
+  max-width:1200px;
+  margin:auto;
+
+  background:linear-gradient(135deg,#2F63E8,#3E78F0);
+
+  border-radius:20px;
+
+  padding:24px 16px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+@media (min-width: 640px) {
+  .showcase-container {
+    padding: 32px 24px;
+    border-radius: 24px;
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase-container {
+    padding: 48px 40px;
+    border-radius: 32px;
+    gap: 40px;
+  }
+}
+
+/* LEFT TEXT */
+
+.showcase-left{
+  flex:1;
+  min-width:0;
+  max-width:500px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.showcase-left h2{
+  font-size: clamp(28px, 6vw, 48px);
+  line-height:1.1;
+  font-weight:900;
+
+  color:#ffffff;
+
+  margin-bottom:14px;
+}
+
+.showcase-desc{
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height:1.6;
+
+  color:rgba(255,255,255,0.85);
+
+  margin-bottom:14px;
+}
+
+@media (min-width: 768px) {
+  .showcase-desc {
+    margin-bottom: 16px;
+  }
+}
+
+/* LIST */
+
+.feature-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+@media (min-width: 768px) {
+  .feature-list {
+    gap: 10px;
+  }
+}
+
+.feature-list li{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  color:white;
+  font-size: clamp(13px, 2vw, 16px);
+  line-height: 1.4;
+}
+
+.feature-list li::before{
+  content:"✔";
+
+  width:18px;
+  height:18px;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,0.25);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:11px;
+}
+
+/* RIGHT IMAGE */
+
+.showcase-right{
+  flex:1;
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.showcase-right img{
+  width:100%;
+  max-width:450px;
+  height:auto;
+  min-height:200px;
+
+  object-fit:cover;
+
+  border-radius:8px;
+
+  border:4px solid #0F172A;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.25);
+}
+
+@media (min-width: 768px) {
+  .showcase-right img {
+    min-height: 250px;
+    border: 6px solid #0F172A;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase-right img {
+    border: 8px solid #0F172A;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:1024px){
+  .showcase-container{
+    flex-direction:column;
+    padding:40px 32px;
+    gap:32px;
+  }
+
+  .showcase-left{
+    max-width:100%;
+  }
+
+  .showcase-left h2{
+    font-size:40px;
+    line-height:1.15;
+  }
+
+  .showcase-right img{
+    max-width:100%;
+    height:auto;
+  }
+}
+
+@media(max-width:768px){
+  .product-showcase{
+    padding:32px 16px;
+  }
+
+  .showcase-container{
+    padding:32px 20px;
+    gap:24px;
+    border-radius:20px;
+  }
+
+  .showcase-left h2{
+    font-size:32px;
+    line-height:1.2;
+  }
+
+  .showcase-desc{
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .feature-list li{
+    font-size:14px;
+  }
+}

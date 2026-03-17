@@ -1,0 +1,61 @@
+.contact-hero {
+  width: 100%;
+  background: #F6F6F8;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main container */
+.contact-hero .hero-container {
+  max-width: 896px;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* keep them close together */
+  gap: 12px;
+}
+
+/* Support Center badge */
+.contact-hero .support-badge {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #245FEB;
+
+  background: rgba(36, 95, 235, 0.10);
+
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+/* Main heading */
+.contact-hero .hero-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -3px;
+
+  color: #0F172A;
+
+  max-width: 650px;
+}
+
+/* description */
+.contact-hero .hero-description {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  color: #475569;
+
+  max-width: 700px;
+}

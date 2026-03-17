@@ -1,0 +1,140 @@
+/* =========================
+   ABOUT HERO SECTION
+========================= */
+
+.about-hero{
+
+position:relative;
+
+width:100%;
+height:500px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+overflow:hidden;
+
+}
+
+
+/* BACKGROUND IMAGE */
+
+.about-hero-image{
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+transform: translateY(var(--about-hero-bg, 0px));
+transition: transform 0.1s linear;
+
+}
+
+
+/* DARK OVERLAY */
+
+.about-hero-overlay{
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#0F172A;
+opacity:0.4;
+
+}
+
+
+/* HERO CONTENT */
+
+.about-hero-content{
+
+position:relative;
+
+text-align:center;
+
+max-width:690px;
+
+z-index:2;
+
+transform: translateY(var(--about-hero-content, 0px));
+transition: transform 0.1s linear;
+
+}
+
+
+/* TITLE */
+
+.about-title{
+
+font-family:Inter;
+font-weight:900;
+
+font-size:60px;
+line-height:60px;
+
+letter-spacing:-1.5px;
+
+color:#FFFFFF;
+
+margin-bottom:16px;
+
+}
+
+
+/* SUBTITLE */
+
+.about-subtitle{
+
+font-family:Inter;
+font-weight:400;
+
+font-size:20px;
+line-height:28px;
+
+color:rgba(255,255,255,0.9);
+
+margin-bottom:24px;
+
+}
+
+
+/* BUTTON */
+
+.about-btn{
+
+background:#2563EB;
+color:#FFFFFF;
+
+border:none;
+
+padding:16px 32px;
+
+border-radius:8px;
+
+font-family:Inter;
+font-weight:700;
+font-size:18px;
+
+cursor:pointer;
+
+transition:0.25s;
+
+}
+
+
+.about-btn:hover{
+
+background:#1D4ED8;
+transform:translateY(-2px);
+
+}

@@ -1,0 +1,66 @@
+/* OUR STORY SECTION */
+
+.story-section{
+  width:100%;
+  background:#ffffff;
+
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+.story-container{
+  max-width:1280px;
+  margin:auto;
+
+  padding-left:192px;
+  padding-right:192px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+/* Header */
+
+.story-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  margin-bottom:24px;
+}
+
+.story-line{
+  width:48px;
+  height:4px;
+
+  background:#2563EB;
+}
+
+.story-header h2{
+  font-family:Inter;
+  font-weight:700;
+  font-size:30px;
+  line-height:36px;
+
+  color:#0F172A;
+}
+
+/* Text */
+
+.story-text{
+  max-width:864px;
+
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.story-text p{
+  font-family:Inter;
+  font-weight:400;
+  font-size:18px;
+
+  line-height:29.25px;
+
+  color:#475569;
+}

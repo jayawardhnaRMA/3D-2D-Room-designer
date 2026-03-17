@@ -1,0 +1,71 @@
+.cta-section{
+  background:#F6F6F8;
+  padding:96px 32px;
+}
+
+/* Container */
+
+.cta-container{
+  max-width:896px;
+  margin:auto;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  text-align:center;
+  gap:16px;
+}
+
+/* Title */
+
+.cta-title{
+  font-family:"Inter";
+  font-weight:900;
+  font-size:36px;
+  line-height:25px;
+
+  color:#0F172A;
+}
+
+/* Text */
+
+.cta-text{
+  font-family:"Inter";
+  font-weight:400;
+  font-size:18px;
+  line-height:20px;
+
+  color:#475569;
+  max-width:856px;
+}
+
+/* Button */
+
+.cta-button{
+  margin-top:8px;
+
+  height:64px;
+  padding:0 32px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#245FEB;
+  color:white;
+
+  font-family:"Inter";
+  font-size:18px;
+  font-weight:800;
+
+  cursor:pointer;
+
+  box-shadow:
+  0px 25px 50px -12px rgba(36,95,235,0.4);
+}
+
+/* Hover */
+
+.cta-button:hover{
+  transform:translateY(-1px);
+}

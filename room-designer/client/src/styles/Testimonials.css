@@ -1,0 +1,167 @@
+/* Section */
+
+.testimonials{
+  width:100%;
+  padding:32px 0;
+  background:#ffffff;
+}
+
+@media (min-width: 640px) {
+  .testimonials {
+    padding: 48px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials {
+    padding: 96px 0;
+  }
+}
+
+
+/* Container */
+
+.testimonials-container{
+  max-width:1280px;
+  margin:auto;
+  width:100%;
+  padding:0 16px;
+}
+
+@media (min-width: 640px) {
+  .testimonials-container {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-container {
+    padding: 0 32px;
+  }
+}
+
+
+/* Heading */
+
+.testimonials-title{
+  text-align:center;
+  font-family:"Inter";
+  font-weight:900;
+  font-size: clamp(24px, 6vw, 36px);
+  color:#0F172A;
+  margin-bottom:32px;
+}
+
+@media (min-width: 768px) {
+  .testimonials-title {
+    margin-bottom: 64px;
+  }
+}
+
+
+/* Grid */
+
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+@media (min-width: 640px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+
+/* Card */
+
+.testimonial-card{
+  background:#F6F6F8;
+  border-radius:16px;
+  padding:16px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-card {
+    padding: 32px;
+  }
+}
+
+
+/* Stars */
+
+.stars{
+  display:flex;
+  gap:4px;
+  margin-bottom:16px;
+}
+
+.star{
+  fill:#ffffff;
+  stroke:#FACC15;
+  stroke-width:2;
+}
+
+/* Text */
+
+.testimonial-text{
+  font-family:"Inter";
+  font-size:16px;
+  line-height:24px;
+  color:#475569;
+  margin-bottom:24px;
+}
+
+
+/* Author section */
+
+.testimonial-author{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+
+/* Avatar */
+
+.testimonial-author img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+
+/* Name + Role */
+
+.author-info{
+  display:flex;
+  flex-direction:column;
+}
+
+.author-name{
+  font-family:"Inter";
+  font-size:16px;
+  font-weight:700;
+  color:#0F172A;
+}
+
+.author-role{
+  font-size:12px;
+  color:#64748B;
+}

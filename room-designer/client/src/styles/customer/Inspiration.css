@@ -1,0 +1,494 @@
+/* ============================
+   Roomio - Inspiration Page
+   src/styles/customer/Inspiration.css
+   ============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #e8eaf0;
+  color: #1a1a2e;
+}
+
+/* ====== Wrapper & Frame ====== */
+.ins-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #e8eaf0;
+}
+
+.ins-frame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== Top Navbar ====== */
+.ins-topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.ins-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a1a2e;
+}
+
+.ins-logo-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+.ins-topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ins-nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ins-nav-link:hover,
+.ins-nav-link.active {
+  color: #2563eb;
+}
+
+.ins-icon-btn {
+  font-size: 16px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.ins-avatar img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+/* ====== Layout ====== */
+.ins-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ====== Sidebar ====== */
+.ins-sidebar {
+  width: 160px;
+  min-width: 160px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.ins-sidebar-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  padding: 0 8px;
+  margin-bottom: 6px;
+}
+
+.ins-sidebar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ins-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.ins-sidebar-item:hover {
+  background: #f3f4f6;
+}
+
+.ins-sidebar-item--active {
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.ins-sidebar-icon {
+  font-size: 15px;
+}
+
+.ins-logout-btn {
+  margin-top: auto;
+  background: #FD5558;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s;
+}
+
+.ins-logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ====== Main Content ====== */
+.ins-content {
+  flex: 1;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-width: 0;
+  padding: 28px 28px 20px;
+  gap: 20px;
+}
+
+/* ====== Page Header ====== */
+.ins-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.ins-page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.ins-page-sub {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.ins-new-btn {
+  background: #245FEB;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.ins-new-btn:hover {
+  background: #1d4fd0;
+}
+
+/* ====== Filter Bar ====== */
+.ins-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.ins-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.ins-filter-btn:hover {
+  border-color: #245FEB;
+  color: #245FEB;
+}
+
+.ins-filter-btn--active {
+  background: #245FEB;
+  border-color: #245FEB;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ins-filter-btn--active:hover {
+  color: #fff;
+}
+
+.ins-grid-icon {
+  font-size: 14px;
+}
+
+.ins-chevron {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* ====== Cards Grid ====== */
+.ins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 400px));
+  gap: 60px;
+  justify-content: start;
+  flex-shrink: 0;
+}
+
+/* ====== Inspiration Card ====== */
+.ins-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.ins-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+  transform: translateY(-2px);
+}
+
+/* Card Thumbnail */
+.ins-card-thumb {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ins-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.ins-card:hover .ins-card-thumb img {
+  transform: scale(1.04);
+}
+
+/* Style badge (bottom-left of image) */
+.ins-style-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 5px;
+  letter-spacing: 0.07em;
+}
+
+.style-modern      { background: #2563eb; color: #fff; }
+.style-industrial  { background: #7c3aed; color: #fff; }
+.style-scandi      { background: #0891b2; color: #fff; }
+.style-minimalist  { background: #374151; color: #fff; }
+
+/* Heart button (top-right of image) */
+.ins-heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.ins-heart-btn:hover {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.ins-heart-btn--saved {
+  color: #ef4444;
+  border-color: #fecaca;
+  background: #fff5f5;
+}
+
+/* Card Body */
+.ins-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.ins-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ins-card-meta {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.ins-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ins-see-btn {
+  flex: 1;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ins-see-btn:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #2563eb;
+}
+
+.ins-bookmark-btn {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.ins-bookmark-btn:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* ====== Load More Section ====== */
+.ins-load-more-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 4px;
+  flex-shrink: 0;
+}
+
+.ins-load-more-btn {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.ins-load-more-btn:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.ins-showing {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .ins-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ins-sidebar {
+    display: none;
+  }
+}
